@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox spacing="10" fx:controller="app.FormActivityController" xmlns:fx="http://javafx.com/fxml" alignment="CENTER">
+
+	<Label fx:id="formTitle" text="Form attività" style="-fx-font-size: 18px;"/>
+	
+	<HBox spacing="10">
+        <Label text="ID"/>
+        <TextField fx:id="uid" prefWidth="300"/>
+    </HBox>
+	
+	<HBox spacing="10">
+        <Label text="Nome"/>
+        <TextField fx:id="txtNome" prefWidth="300"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Descrizione"/>
+        <TextArea fx:id="txtDescrizione" prefWidth="300" prefHeight="100" wrapText="true"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Inizio (es: 2024-05-20T15:00)"/>
+        <TextField fx:id="txtInizio" prefWidth="300"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Fine prevista (es: 2024-05-22)"/>
+        <TextField fx:id="txtFinePrev" prefWidth="300"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Fine (es: 2024-05-21T18:30)"/>
+        <TextField fx:id="txtFine" prefWidth="300"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Completata"/>
+        <CheckBox fx:id="chkDone"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Priorità"/>
+        <TextField fx:id="txtPriorita" prefWidth="300"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button fx:id="btnSalva" text="Salva"/>
+    </HBox>
+
+
+</VBox>

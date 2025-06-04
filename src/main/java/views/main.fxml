@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml" 
+      fx:controller="app.ActivityController"
+      alignment="CENTER">
+	
+	<HBox spacing="10">
+    	<Label text = "Attività"/>
+		<Button fx:id="showActive" text="Mostra attività attive"/>
+		<Button fx:id="showAll" text="Mostra tutte le attività"/>
+		<Button fx:id="create" text="Crea una nuova attività"/>
+	</HBox>
+	
+</VBox>

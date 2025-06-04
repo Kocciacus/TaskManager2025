@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="app.ActivitiesTableController" spacing="10" alignment="CENTER">
+    <Label text="Elenco attività"/>
+    <TableView fx:id="table" prefWidth="600" prefHeight="400">
+        <columns>
+            <TableColumn fx:id="colId" text="ID" prefWidth="50"/>
+            <TableColumn fx:id="colNome" text="Nome" prefWidth="100"/>
+            <TableColumn fx:id="colDescrizione" text="Descrizione" prefWidth="150"/>
+            <TableColumn fx:id="colInizio" text="Inizio" prefWidth="150"/>
+            <TableColumn fx:id="colFinePrev" text="Fine Prev." prefWidth="100"/>
+            <TableColumn fx:id="colFine" text="Fine" prefWidth="150"/>
+            <TableColumn fx:id="colOre" text="Ore" prefWidth="50"/>
+            <TableColumn fx:id="colDone" text="Completata" prefWidth="50"/>
+            <TableColumn fx:id="colPriority" text="Priorità" prefWidth="100"/>
+            <TableColumn fx:id="colClose" text="Chiudi" prefWidth="100"/>
+            <TableColumn fx:id="colActions" text="Azioni" prefWidth="100"/>
+            <TableColumn fx:id="colDelete" text="Elimina" prefWidth="100"/>
+        </columns>
+    </TableView>
+    <Button fx:id="export" text="Esporta in Microsoft Excel"/>
+</VBox>
