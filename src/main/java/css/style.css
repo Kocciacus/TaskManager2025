@@ -1,0 +1,61 @@
+.root {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-background-color: #f9f9f9;
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+.button.close-button, .button.export-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-padding: 6px 12px;
+    -fx-background-radius: 6;
+}
+
+.button.close-button:hover, .button.export-button:hover {
+    -fx-background-color: #45a049;
+}
+
+.button.delete-button {
+    -fx-background-color: #c12525;
+    -fx-text-fill: white;
+    -fx-padding: 6px 12px;
+    -fx-background-radius: 6;
+}
+
+.button.delete-button:hover {
+    -fx-background-color: #ab2121;
+}
+
+.button.update-button {
+    -fx-background-color: #4169e1;
+    -fx-text-fill: white;
+    -fx-padding: 6px 12px;
+    -fx-background-radius: 6;
+}
+
+.button.update-button:hover {
+    -fx-background-color: #2251dd;
+}
+
+.text-field {
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-padding: 4px;
+    -fx-background-color: white;
+}
+
+.table-view {
+    -fx-border-color: #ddd;
+    -fx-table-cell-border-color: #ccc;
+    -fx-selection-bar: #e0f7fa;
+    -fx-selection-bar-non-focused: #e0f7fa;
+}
+
+.table-column {
+    -fx-alignment: CENTER-LEFT;
+}

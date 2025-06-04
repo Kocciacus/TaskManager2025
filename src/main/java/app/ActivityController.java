@@ -54,7 +54,9 @@ public class ActivityController {
 
             Stage stage = new Stage();
             stage.setTitle(mode.equals("active") ? "Attività attive" : "Tutte le attività");
-            stage.setScene(new Scene(root));
+            Scene scene = new Scene(root);
+            scene.getStylesheets().add(getClass().getResource("/css/style.css").toExternalForm());
+            stage.setScene(scene);
             stage.show();
         } catch (Exception e) {
             e.printStackTrace();
@@ -74,7 +76,9 @@ public class ActivityController {
             
             Stage stage = new Stage();
             stage.setTitle(mode.equals("create") ? "Crea attività" : "Modifica attività");
-            stage.setScene(new Scene(root));
+            Scene scene = new Scene(root);
+            scene.getStylesheets().add(getClass().getResource("/css/style.css").toExternalForm());
+            stage.setScene(scene);
             stage.show();
         } catch (Exception e) {
             e.printStackTrace();
