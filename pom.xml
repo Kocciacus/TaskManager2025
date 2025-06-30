@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.spingcourse</groupId>
-	<artifactId>Task-manager-experiment-bck</artifactId>
+	<artifactId>TaskManagerExperiment</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Task-manager-experiment-bck</name>
+	<name>TaskManagerExperiment</name>
 	<description>Task-manager-experiment-bck</description>
 	<url/>
 	<licenses>

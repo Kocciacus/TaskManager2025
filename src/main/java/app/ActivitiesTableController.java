@@ -77,6 +77,7 @@ public class ActivitiesTableController {
     
     @FXML
     private void initialize() {
+    	export.getStyleClass().add("export-button");
         export.setOnAction(e -> setupExportButton());
     }
 
@@ -126,6 +127,7 @@ public class ActivitiesTableController {
             private final Button btn = new Button("Modifica");
 
             {
+            	btn.getStyleClass().add("update-button");
                 btn.setOnAction(e -> {
                     Activity activity = getTableView().getItems().get(getIndex());
                     activityController.openFormWindow("update", activity);
@@ -150,6 +152,7 @@ public class ActivitiesTableController {
             private final Button btn = new Button("Elimina");
 
             {
+            	btn.getStyleClass().add("delete-button");
                 btn.setOnAction(e -> {
                     Activity activity = getTableView().getItems().get(getIndex());
                     showDeleteConfirmation(activity);
@@ -186,6 +189,7 @@ public class ActivitiesTableController {
         colClose.setCellFactory(col -> new TableCell<>() {
             private final Button btn = new Button("Chiudi");
             {
+            	btn.getStyleClass().add("close-button");
                 btn.setOnAction(e -> {
                 	Activity activity = getTableView().getItems().get(getIndex());
                     service.closeAsctivity(activity.getId());
@@ -233,7 +237,6 @@ public class ActivitiesTableController {
     }
     
     public void setupExportButton() {
-        export.setOnAction(e -> {
             try {
                 List<Activity> activities = table.getItems();
                 File file;
@@ -250,7 +253,6 @@ public class ActivitiesTableController {
             } catch (Exception ex) {
                 ex.printStackTrace();
             }
-        });
     }
 
 }

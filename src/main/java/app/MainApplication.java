@@ -46,7 +46,7 @@ public class MainApplication extends Application {
 
     public static void main(String[] args) {
         // Imposta la proprietà per JavaFX
-        //System.setProperty("javafx.preloader", "");
+        // System.setProperty("javafx.preloader", "");
     	System.out.println("START");
         launch(args);
     }
